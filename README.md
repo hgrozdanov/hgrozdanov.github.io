@@ -1,6 +1,6 @@
 # Hristo Grozdanov’s CV
 
-[![Travis](https://img.shields.io/travis/hgrozdanov/cv.svg)](https://travis-ci.org/hgrozdanov/cv) [![David](https://img.shields.io/david/hgrozdanov/cv.svg)](https://david-dm.org/hgrozdanov/cv) [![David](https://img.shields.io/david/dev/hgrozdanov/cv.svg)](https://david-dm.org/hgrozdanov/cv?type=dev) [![GitHub release](https://img.shields.io/github/release/hgrozdanov/cv.svg)](https://github.com/hgrozdanov/cv/releases/latest)
+[![Travis](https://img.shields.io/travis/hgrozdanov/hgrozdanov.github.io.svg)](https://travis-ci.org/hgrozdanov/hgrozdanov.github.io) [![David](https://img.shields.io/david/hgrozdanov/hgrozdanov.github.io.svg)](https://david-dm.org/hgrozdanov/hgrozdanov.github.io) [![David](https://img.shields.io/david/dev/hgrozdanov/hgrozdanov.github.io.svg)](https://david-dm.org/hgrozdanov/hgrozdanov.github.io?type=dev) [![GitHub release](https://img.shields.io/github/release/hgrozdanov/hgrozdanov.github.io.svg)](https://github.com/hgrozdanov/hgrozdanov.github.io/releases/latest)
 
 #
 
