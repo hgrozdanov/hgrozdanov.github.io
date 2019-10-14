@@ -1,22 +1,22 @@
 # Hristo Grozdanov’s CV
 
-[![Travis](https://img.shields.io/travis/hgrozdanov/hgrozdanov.github.io.svg)](https://travis-ci.org/hgrozdanov/hgrozdanov.github.io) [![David](https://img.shields.io/david/hgrozdanov/hgrozdanov.github.io.svg)](https://david-dm.org/hgrozdanov/hgrozdanov.github.io) [![David](https://img.shields.io/david/dev/hgrozdanov/hgrozdanov.github.io.svg)](https://david-dm.org/hgrozdanov/hgrozdanov.github.io?type=dev) [![GitHub release](https://img.shields.io/github/release/hgrozdanov/hgrozdanov.github.io.svg)](https://github.com/hgrozdanov/hgrozdanov.github.io/releases/latest)
+[![Travis](https://img.shields.io/travis/hgrozdanov/cv.svg)](https://travis-ci.org/hgrozdanov/cv) [![David](https://img.shields.io/david/hgrozdanov/cv.svg)](https://david-dm.org/hgrozdanov/cv) [![David](https://img.shields.io/david/dev/hgrozdanov/cv.svg)](https://david-dm.org/hgrozdanov/cv?type=dev) [![GitHub release](https://img.shields.io/github/release/hgrozdanov/cv.svg)](https://github.com/hgrozdanov/cv/releases/latest)
 
-#
+## Build Setup
 
-*Technologies:* **ES6**, **HTML5**, **CSS3**
+``` bash
+# install dependencies
+$ yarn install
 
-*Libraries:* **[React](https://reactjs.org)**, **[Moment.js](http://momentjs.com)**
+# serve with hot reload at localhost:3000
+$ yarn dev
 
-*Linters:* **[ESLint](https://eslint.org)**, **[stylelint](https://stylelint.io)**
+# build for production and launch server
+$ yarn build
+$ yarn start
 
-*Compilers:* **[Babel](http://babeljs.io)**, **[PostCSS](https://postcss.org)**, **[Sass](http://sass-lang.com)**
+# generate static project
+$ yarn generate
+```
 
-*Bundler:* **[Webpack](http://webpack.js.org)**
-
-*CI:* **[Travis](https://travis-ci.org)**
-
-*CMS:* **[Contentful](https://www.contentful.com)**
-
-#
-*Production:* **[hgrozdanov.github.io](http://hgrozdanov.github.io)**
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
