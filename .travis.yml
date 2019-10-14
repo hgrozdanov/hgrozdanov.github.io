@@ -1,21 +1,19 @@
 language: node_js
 node_js:
-  - node
+- node
 script:
-  - npm install
-  - npm run build
-  - printf '.gitignore\ndeployed*' > dist/.gitignore
-  - cp 'README.md' dist
+- yarn generate
+- cp 'README.md' dist
+before_install:
+  - openssl aes-256-cbc -K $encrypted_edfd97e1df95_key -iv $encrypted_edfd97e1df95_iv -in .env.enc -out .env -d
 branches:
   only:
-    - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
+  - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
 deploy:
   - provider: releases
     api_key:
       secure: OH8PnI7gf2q/sN8Jf7aH76ksZXu2XMgWH4a59wFmBUxxNHyLfjylgSOkQwUiFFAri9ehunP5WikvNV8RwfYjC+cUPZ4ixnfBZWLS2ejZiJfitAn4JM+NhoC0qUOrtlz7IRySZ0f0RjaVz85zF5k3wb8L3vyLNh08nVyDGfwVl+ES5zyQKqfzXnldx8X9oLObz5052/8ngLtyZtr0yS9Q9M/3dntYkVU4iZemcPXa87ks1tCMvIliYLvAJucztgg5s3ixK5UUOpkoGGI4EHUq4IWNzb4mD+iUPoM3lMNUFBPuhPSrK+sK2QNXjCPIR39YKjFQEyY+4YhIWjY8zgCJXHIy9/EtFKTi1Zz9cIx8/iNx3Uk+Tu1nrNTPkzeSC46aCm8IwZP0T3e5rIG84MEBtGXR2SGsc0IRgA/DmbxGkCRi6Et882B2BQFbfuAP8h1Ii/Bd4Sc1tc7cbAdvs49rjSJvlTZRnZnBPTJqCwgG+SizqTtd+TUNEhstGxtoi6GeAJC2vNXtOj2EFu5REYwRpxsa5qnMPqjdLgYu0HlWztQO09w/THlNce78gTTB8tDX81eZrIHpo3P2PZYuBxf6sIgaP9nTWDvZTE5Lj8EHaoelJ3W5pY1QhD8cqolcgsLU0cBfA0M9UyRsz+FbO9NWF9ZwWQFHJeLqusKZJABtPD4=
     skip_cleanup: true
-    file:
-      - 'production.zip'
     on:
       tags: true
   - provider: pages
